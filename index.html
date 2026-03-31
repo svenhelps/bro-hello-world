@@ -1,117 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bro, Hello World</title>
-    <meta
-      name="description"
-      content="A tasteful and funny static GitHub Pages landing page for Sven's bro hello world project."
-    />
-    <link rel="stylesheet" href="./styles.css" />
+    <title>Bro Hello World</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg1: #0f172a;
+        --bg2: #1e293b;
+        --card: rgba(15, 23, 42, 0.75);
+        --text: #e2e8f0;
+        --muted: #94a3b8;
+        --accent: #60a5fa;
+        --accent2: #22d3ee;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: radial-gradient(circle at top, #1d4ed8 0%, var(--bg1) 38%, #020617 100%);
+        color: var(--text);
+      }
+      .card {
+        width: min(92vw, 760px);
+        padding: 3rem;
+        border-radius: 24px;
+        background: var(--card);
+        backdrop-filter: blur(18px);
+        border: 1px solid rgba(148, 163, 184, 0.18);
+        box-shadow: 0 20px 60px rgba(0,0,0,.45);
+      }
+      .eyebrow {
+        letter-spacing: .18em;
+        text-transform: uppercase;
+        color: var(--accent2);
+        font-size: .8rem;
+        font-weight: 700;
+      }
+      h1 {
+        margin: .75rem 0 1rem;
+        font-size: clamp(2.5rem, 7vw, 5rem);
+        line-height: .95;
+      }
+      p {
+        margin: 0;
+        color: var(--muted);
+        font-size: clamp(1rem, 2vw, 1.2rem);
+        line-height: 1.6;
+      }
+      .pill {
+        display: inline-block;
+        margin-top: 1.5rem;
+        padding: .7rem 1rem;
+        border-radius: 999px;
+        background: rgba(96,165,250,.15);
+        border: 1px solid rgba(96,165,250,.25);
+        color: var(--accent);
+        font-weight: 700;
+      }
+    </style>
   </head>
   <body>
-    <div class="orb orb-left" aria-hidden="true"></div>
-    <div class="orb orb-right" aria-hidden="true"></div>
-
-    <main class="page">
-      <header class="topbar" aria-label="Site intro">
-        <p class="brand">bro hello world</p>
-        <p class="tagline">plain HTML, clean push, regulated confidence</p>
-      </header>
-
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow">GitHub Pages, zero warm-up required</p>
-          <h1 id="hero-title">Bro, hello world.</h1>
-          <p class="lede">
-            A one-page launch site for the noble act of shipping something small
-            on purpose. No framework stack. No ceremonial overengineering. Just
-            a tidy static page with a little charm and decent posture.
-          </p>
-
-          <div class="actions">
-            <a class="button" href="https://svenhelps.github.io/bro-hello-world/"
-              >View the live site</a
-            >
-            <a
-              class="button button-secondary"
-              href="https://github.com/svenhelps/bro-hello-world"
-              >Browse the repo</a
-            >
-          </div>
-
-          <section class="stats" aria-label="Project stats">
-            <article class="stat">
-              <p class="stat-label">Reps</p>
-              <p class="stat-value">1 static page</p>
-            </article>
-            <article class="stat">
-              <p class="stat-label">Dependencies</p>
-              <p class="stat-value">0, by design</p>
-            </article>
-            <article class="stat">
-              <p class="stat-label">Deploy move</p>
-              <p class="stat-value">Push to <code>main</code></p>
-            </article>
-          </section>
-        </div>
-
-        <aside class="terminal-card" aria-label="Deploy transcript">
-          <p class="terminal-kicker">Ceremonial transcript</p>
-          <pre><code>$ git push origin main
-Counting objects: enough
-Writing objects: absolutely
-remote: bro, that is now on the internet
-
-console.log("bro, hello world");
-// tasteful flex achieved</code></pre>
-        </aside>
-      </section>
-
-      <section class="grid" aria-label="Highlights">
-        <article class="panel">
-          <p class="panel-index">01</p>
-          <h2>Funny, not noisy</h2>
-          <p>
-            The joke is the restraint. It knows exactly when to stop talking and
-            let the static files do their set.
-          </p>
-        </article>
-        <article class="panel">
-          <p class="panel-index">02</p>
-          <h2>Pages-ready</h2>
-          <p>
-            Everything lives at the repo root, so GitHub Pages can publish it
-            directly from the `main` branch with no build pipeline.
-          </p>
-        </article>
-        <article class="panel">
-          <p class="panel-index">03</p>
-          <h2>Polished enough</h2>
-          <p>
-            Warm colors, readable type, and a mild wink at bro culture instead
-            of a full-volume parody.
-          </p>
-        </article>
-      </section>
-
-      <section class="manifesto" aria-labelledby="manifesto-title">
-        <p class="eyebrow">Bro Code, trimmed to essentials</p>
-        <h2 id="manifesto-title">Ship the hello world before the protein shake gets warm.</h2>
-        <p>
-          This project exists to stay lightweight: one HTML file, one CSS file,
-          one public URL. It is the web equivalent of doing the basics well and
-          leaving a rep in reserve.
-        </p>
-
-        <div class="pill-row" aria-label="Stack">
-          <span class="pill">HTML</span>
-          <span class="pill">CSS</span>
-          <span class="pill">GitHub Pages</span>
-          <span class="pill">No build step</span>
-        </div>
-      </section>
+    <main class="card">
+      <div class="eyebrow">Brogrammed Intelligence</div>
+      <h1>bro hello world</h1>
+      <p>
+        Sven’s first little GitHub Pages app, forged directly out of group chat governance,
+        chaos, and brotherly ambition.
+      </p>
+      <div class="pill">deployed with love, fear, and excellent network policy</div>
     </main>
   </body>
 </html>
