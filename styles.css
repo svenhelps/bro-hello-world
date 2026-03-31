@@ -146,6 +146,13 @@ h1 {
   margin-top: 2rem;
 }
 
+.microcopy {
+  margin: 1.25rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+}
+
 .button-secondary {
   color: var(--text);
   background: rgba(255, 255, 255, 0.08);
