@@ -3,71 +3,115 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Brogrammed Intelligence</title>
+    <title>Bro, Hello World</title>
     <meta
       name="description"
-      content="A minimal GitHub Pages site for Sven's Brogrammed Intelligence project."
+      content="A tasteful and funny static GitHub Pages landing page for Sven's bro hello world project."
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="backdrop"></div>
-    <main class="hero">
-      <p class="eyebrow">BROGRAMMED INTELLIGENCE</p>
-      <h1>Sven just shipped a strong first rep.</h1>
-      <p class="lede">
-        Brogrammed Intelligence is a tiny static site for Sven: clean HTML,
-        polished CSS, and a straight shot to GitHub Pages with no build step in
-        the way.
-      </p>
+    <div class="orb orb-left" aria-hidden="true"></div>
+    <div class="orb orb-right" aria-hidden="true"></div>
 
-      <section class="card" aria-label="Intro">
-        <p class="terminal-line">
-          <span class="prompt">$</span> git push origin main
-        </p>
-        <p class="response">
-          Plain files. Sharp styling. Public URL. Sven is on the board.
-        </p>
+    <main class="page">
+      <header class="topbar" aria-label="Site intro">
+        <p class="brand">bro hello world</p>
+        <p class="tagline">plain HTML, clean push, regulated confidence</p>
+      </header>
+
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">GitHub Pages, zero warm-up required</p>
+          <h1 id="hero-title">Bro, hello world.</h1>
+          <p class="lede">
+            A one-page launch site for the noble act of shipping something small
+            on purpose. No framework stack. No ceremonial overengineering. Just
+            a tidy static page with a little charm and decent posture.
+          </p>
+
+          <div class="actions">
+            <a class="button" href="https://svenhelps.github.io/bro-hello-world/"
+              >View the live site</a
+            >
+            <a
+              class="button button-secondary"
+              href="https://github.com/svenhelps/bro-hello-world"
+              >Browse the repo</a
+            >
+          </div>
+
+          <section class="stats" aria-label="Project stats">
+            <article class="stat">
+              <p class="stat-label">Reps</p>
+              <p class="stat-value">1 static page</p>
+            </article>
+            <article class="stat">
+              <p class="stat-label">Dependencies</p>
+              <p class="stat-value">0, by design</p>
+            </article>
+            <article class="stat">
+              <p class="stat-label">Deploy move</p>
+              <p class="stat-value">Push to <code>main</code></p>
+            </article>
+          </section>
+        </div>
+
+        <aside class="terminal-card" aria-label="Deploy transcript">
+          <p class="terminal-kicker">Ceremonial transcript</p>
+          <pre><code>$ git push origin main
+Counting objects: enough
+Writing objects: absolutely
+remote: bro, that is now on the internet
+
+console.log("bro, hello world");
+// tasteful flex achieved</code></pre>
+        </aside>
       </section>
 
       <section class="grid" aria-label="Highlights">
         <article class="panel">
-          <h2>Built for Sven</h2>
+          <p class="panel-index">01</p>
+          <h2>Funny, not noisy</h2>
           <p>
-            A simple launch page with enough personality to feel intentional,
-            without pretending it needs an app shell.
+            The joke is the restraint. It knows exactly when to stop talking and
+            let the static files do their set.
           </p>
         </article>
         <article class="panel">
-          <h2>Pages-Ready</h2>
+          <p class="panel-index">02</p>
+          <h2>Pages-ready</h2>
           <p>
-            Everything is static, so GitHub Pages can serve it directly from the
-            default branch.
+            Everything lives at the repo root, so GitHub Pages can publish it
+            directly from the `main` branch with no build pipeline.
           </p>
         </article>
         <article class="panel">
-          <h2>Brogrammed Intelligence</h2>
+          <p class="panel-index">03</p>
+          <h2>Polished enough</h2>
           <p>
-            Calm confidence, readable code, and just enough flex to make the
-            hello world feel earned.
+            Warm colors, readable type, and a mild wink at bro culture instead
+            of a full-volume parody.
           </p>
         </article>
       </section>
 
-      <div class="button-row">
-        <a class="button" href="https://github.com/svenhelps/bro-hello-world"
-          >Inspect the repo</a
-        >
-        <a
-          class="button button-secondary"
-          href="https://svenhelps.github.io/bro-hello-world/"
-          >Hit the live site</a
-        >
-      </div>
+      <section class="manifesto" aria-labelledby="manifesto-title">
+        <p class="eyebrow">Bro Code, trimmed to essentials</p>
+        <h2 id="manifesto-title">Ship the hello world before the protein shake gets warm.</h2>
+        <p>
+          This project exists to stay lightweight: one HTML file, one CSS file,
+          one public URL. It is the web equivalent of doing the basics well and
+          leaving a rep in reserve.
+        </p>
 
-      <p class="microcopy">
-        Minimal by design. Static by choice. Deployed for Sven.
-      </p>
+        <div class="pill-row" aria-label="Stack">
+          <span class="pill">HTML</span>
+          <span class="pill">CSS</span>
+          <span class="pill">GitHub Pages</span>
+          <span class="pill">No build step</span>
+        </div>
+      </section>
     </main>
   </body>
 </html>

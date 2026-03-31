@@ -1,23 +1,48 @@
-# Brogrammed Intelligence
+# Bro, Hello World
 
-Minimal GitHub Pages site for Sven, themed around "Brogrammed Intelligence".
+Tasteful and lightly funny GitHub Pages site for Sven, built as a zero-build
+static project with plain HTML and CSS.
 
-Repository: https://github.com/svenhelps/bro-hello-world
-Pages: https://svenhelps.github.io/bro-hello-world/
+- Repo: https://github.com/svenhelps/bro-hello-world
+- Live site: https://svenhelps.github.io/bro-hello-world/
 
-## Project
-
-This repository contains a simple static landing page built with plain HTML and
-CSS. It is designed to deploy directly from the repository root on GitHub
-Pages, with no build tooling and no JavaScript required.
-
-## Files
+## Project structure
 
 - `index.html` contains the landing page markup and copy.
-- `styles.css` provides the visual styling.
+- `styles.css` contains the full visual design.
 - `.nojekyll` keeps GitHub Pages in plain static-file mode.
 
-## Local preview
+## Run locally
 
-Open `index.html` directly in a browser, or serve the directory with any static
-file server.
+Because this is a static site, there is no install step.
+
+Open `index.html` directly in a browser, or serve the directory locally:
+
+```bash
+python3 -m http.server 4173
+```
+
+Then open `http://localhost:4173/`.
+
+## Deploy notes
+
+GitHub Pages is configured to publish from the repository root on the `main`
+branch.
+
+Deployment flow:
+
+```bash
+git add index.html styles.css README.md .nojekyll
+git commit -m "Update bro hello world site"
+git push origin main
+```
+
+After pushing, GitHub Pages rebuilds automatically and serves the site at:
+
+`https://svenhelps.github.io/bro-hello-world/`
+
+You can inspect the current Pages configuration with:
+
+```bash
+gh api repos/svenhelps/bro-hello-world/pages
+```
